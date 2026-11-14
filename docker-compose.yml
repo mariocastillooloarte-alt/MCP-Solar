@@ -1,7 +1,14 @@
 services:
   mcp-solar:
     build: .
-    
     restart: unless-stopped
     ports:
-      - "3000:8000"
+      - "3001:8000"
+
+  solar-web:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "3002:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro

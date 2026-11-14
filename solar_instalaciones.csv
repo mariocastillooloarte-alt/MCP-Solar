@@ -1,0 +1,3 @@
+instalacion_id,lead_id,cliente,ciudad,potencia_kw,paneles,estado,fecha_planificada,tecnico
+I-2001,L-1001,Ana García,Madrid,5.4,12,en_planificacion,2026-12-05,Equipo Norte
+I-2002,L-1002,Carlos Ruiz,Toledo,4.5,10,visita_pendiente,2026-12-12,Equipo Centro

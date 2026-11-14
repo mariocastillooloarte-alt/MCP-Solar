@@ -1,0 +1,3 @@
+cita_id,lead_id,cliente,fecha,hora,tipo,tecnico,estado,notas
+C-3001,L-1001,Ana García,2026-11-25,10:00,visita_tecnica,Equipo Norte,programada,Revisar orientación del tejado
+C-3002,L-1002,Carlos Ruiz,2026-11-27,16:30,asesoria,Equipo Centro,pendiente_confirmacion,Confirmar consumo anual

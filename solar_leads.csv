@@ -1,0 +1,4 @@
+lead_id,nombre,email,telefono,ciudad,consumo_mensual_kwh,interes,estado,origen
+L-1001,Ana García,ana.garcia@example.com,+34600111222,Madrid,650,autoconsumo,nuevo,formulario_web
+L-1002,Carlos Ruiz,carlos.ruiz@example.com,+34600333444,Toledo,420,autoconsumo_con_bateria,contactado,calculadora_web
+L-1003,Lucía Martín,lucia.martin@example.com,+34600555666,Guadalajara,900,empresa,nuevo,referido

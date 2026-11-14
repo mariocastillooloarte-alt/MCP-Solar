@@ -1,0 +1,7 @@
+sku,nombre,categoria,marca,potencia_w,capacidad_kwh,precio_unitario,stock,activo
+PAN-450-MONO,Panel monocristalino 450W,panel,SolMax,450,,189.00,120,true
+PAN-550-MONO,Panel monocristalino 550W,panel,SolMax,550,,239.00,80,true
+INV-5K-HIB,Inversor híbrido 5kW,inversor,VoltSun,5000,,1290.00,18,true
+BAT-10K,Batería de litio 10kWh,bateria,StoreVolt,,10,4850.00,7,true
+EST-01,Estructura para tejado residencial,estructura,SunRack,,,620.00,35,true
+MON-01,Monitorización remota,monitorizacion,SunTrack,,,180.00,50,true
