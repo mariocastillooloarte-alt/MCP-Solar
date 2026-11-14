@@ -1,0 +1,7 @@
+services:
+  mcp-solar:
+    build: .
+    
+    restart: unless-stopped
+    ports:
+      - "3000:8000"
