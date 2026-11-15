@@ -7,6 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo"><span class="brand-mark">☀</span><span>Solar<span>Flow</span></span></div>
+      <span class="eyebrow">Panel privado</span>
+      <h1>Bienvenido de nuevo</h1>
+      <p class="login-subtitle">Inicia sesión para acceder a tu panel solar.</p>
+      <form id="login-form" class="login-form">
+        <label>Correo electrónico<input id="login-email" type="email" autocomplete="username" required placeholder="tu@empresa.com"></label>
+        <label>Contraseña<input id="login-password" type="password" autocomplete="current-password" required placeholder="Tu contraseña"></label>
+        <button class="primary full" type="submit">Iniciar sesión</button>
+        <p id="login-error" class="login-error" role="alert"></p>
+      </form>
+      <small class="login-demo-note">Modo demostración: la autenticación real se conectará al backend antes de usar datos reales.</small>
+    </div>
+  </div>
   <aside class="sidebar">
     <div class="brand"><span class="brand-mark">☀</span><span>Solar<span>Flow</span></span></div>
     <p class="eyebrow">Panel comercial</p>
@@ -24,7 +39,7 @@
     <header class="topbar"><div><span class="eyebrow">Sábado, 14 de noviembre de 2026</span><h1 id="page-title">Resumen</h1></div><div class="user-chip"><span class="avatar">MC</span><span>Equipo comercial</span><span>⌄</span></div></header>
 
     <section id="dashboard" class="view active-view">
-      <div class="welcome"><div><span class="eyebrow">Panel de energía solar</span><h2>Convierte consultas en instalaciones.</h2><p>Gestiona presupuestos, productos y clientes desde un solo lugar.</p></div><button class="primary" data-go="quote">+ Crear presupuesto</button></div>
+      <div class="welcome"><div><span class="eyebrow">Panel de energía solar</span><h2>Convierte consultas en instalaciones.</h2><p>Gestiona presupuestos, productos y clientes desde un solo lugar.</p></div><button id="create-quote-button" class="primary" type="button" data-go="quote">+ Crear presupuesto</button></div>
       <div class="stats-grid"><article class="stat-card"><span class="stat-icon green">€</span><div><span class="muted">Presupuestos este mes</span><strong>24</strong><small class="positive">↑ 18% vs. mes anterior</small></div></article><article class="stat-card"><span class="stat-icon orange">◉</span><div><span class="muted">Leads nuevos</span><strong>38</strong><small class="positive">↑ 12% esta semana</small></div></article><article class="stat-card"><span class="stat-icon blue">⚡</span><div><span class="muted">Potencia propuesta</span><strong>126 kW</strong><small class="muted">En proyectos activos</small></div></article><article class="stat-card"><span class="stat-icon purple">⌂</span><div><span class="muted">Instalaciones activas</span><strong>16</strong><small class="muted">4 requieren seguimiento</small></div></article></div>
       <div class="content-grid"><article class="panel"><div class="panel-heading"><div><h3>Actividad reciente</h3><p>Últimos movimientos del equipo</p></div><button class="link-button" data-go="leads">Ver todos</button></div><div class="activity-list"><div class="activity"><span class="activity-icon green">€</span><div><strong>Presupuesto creado</strong><p>Ana García · Sistema 5,4 kW</p></div><time>Hace 12 min</time></div><div class="activity"><span class="activity-icon orange">◎</span><div><strong>Nuevo lead captado</strong><p>Lucía Martín · Guadalajara</p></div><time>Hace 1 h</time></div><div class="activity"><span class="activity-icon blue">⌂</span><div><strong>Visita técnica programada</strong><p>Carlos Ruiz · 27 nov, 16:30</p></div><time>Ayer</time></div></div></article><article class="panel"><div class="panel-heading"><div><h3>Próximas citas</h3><p>Agenda del equipo</p></div><button class="link-button" data-go="installations">Ver agenda</button></div><div class="appointment"><div class="date-box"><strong>25</strong><span>NOV</span></div><div><strong>Ana García</strong><p>Visita técnica · 10:00</p></div><span class="pill orange-pill">Pendiente</span></div><div class="appointment"><div class="date-box"><strong>27</strong><span>NOV</span></div><div><strong>Carlos Ruiz</strong><p>Asesoría · 16:30</p></div><span class="pill green-pill">Confirmada</span></div></article></div>
     </section>
