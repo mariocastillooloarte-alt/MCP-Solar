@@ -22,6 +22,13 @@
       <small class="login-demo-note">Modo demostración: la autenticación real se conectará al backend antes de usar datos reales.</small>
     </div>
   </div>
+  <div id="quote-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
+    <div class="quote-modal-card">
+      <div class="modal-header"><div><span class="eyebrow">Herramienta comercial</span><h2 id="quote-modal-title">Crear presupuesto</h2><p>Calcula una propuesta sin salir del resumen.</p></div><button id="close-quote-modal" class="modal-close" type="button" aria-label="Cerrar">×</button></div>
+      <form class="quote-form modal-form" id="quote-modal-form"><label>Consumo mensual estimado <span>kWh</span><input id="modal-consumption" type="number" value="650" min="1" required></label><label>Potencia objetivo <span>kW</span><input id="modal-power" type="number" value="5" min="1" step="0.1" required></label><label>Tarifa eléctrica <span>€/kWh</span><input id="modal-tariff" type="number" value="0.20" min="0.01" step="0.01" required></label><label class="check-row"><input id="modal-battery" type="checkbox"> Incluir batería de 10 kWh</label><button class="primary full" type="submit">Calcular propuesta</button></form>
+      <div id="modal-quote-result" class="modal-result" hidden><div class="modal-result-top"><span class="eyebrow">Resultado estimado</span><button id="new-quote-button" class="link-button" type="button">Nueva propuesta</button></div><strong id="modal-total">€ 0</strong><div class="modal-result-grid"><div><span>Ahorro anual</span><b id="modal-saving">€ 0</b></div><div><span>Retorno</span><b id="modal-roi">0 años</b></div><div><span>Paneles</span><b id="modal-panels">0</b></div><div><span>Producción anual</span><b id="modal-production">0 kWh</b></div></div><p>Estimación orientativa, pendiente de visita técnica.</p></div>
+    </div>
+  </div>
   <aside class="sidebar">
     <div class="brand"><span class="brand-mark">☀</span><span>Solar<span>Flow</span></span></div>
     <p class="eyebrow">Panel comercial</p>
